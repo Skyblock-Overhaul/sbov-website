@@ -6,21 +6,24 @@ html body{
 }
 
 div.pfp_container {
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
     background-color: #aaa;
     border-radius: 5px;
     display: inline-block;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
 }
 div.pfp_container img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 div.pfp_container div.subcontainer {
     padding: 5%;
     text-align: center;
+    padding-bottom: 10%;
 }
 div.pfp_container div.subcontainer figcaption {
-    font-size: 15%;
+    font-size: 1vw;
     align-self: baseline;
 }
