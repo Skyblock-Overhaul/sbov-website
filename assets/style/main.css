@@ -4,3 +4,23 @@ html body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #ddd;
 }
+
+div.pfp_container {
+    width: 15%;
+    height: 15%;
+    background-color: #aaa;
+    border-radius: 5px;
+    display: inline-block;
+}
+div.pfp_container img {
+    width: 100%;
+    border-radius: 5px;
+}
+div.pfp_container div.subcontainer {
+    padding: 5%;
+    text-align: center;
+}
+div.pfp_container div.subcontainer figcaption {
+    font-size: 15%;
+    align-self: baseline;
+}
