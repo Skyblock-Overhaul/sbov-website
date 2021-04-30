@@ -12,7 +12,7 @@ ul.navbar {
     position: fixed;
     height: 100%;
     overflow: auto;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
 }
 ul.navbar li a {
     display: block;
@@ -89,3 +89,4 @@ div.container {
   margin-top: 15px;
   background-color: #bbb;
   border-top-left-radius: 8px;
+}
