@@ -3,13 +3,16 @@
 }
 ul.navbar {
     list-style-type: none;
-    margin: 0;
+    margin: 8;
+    margin-left: 10;
+    margin-top: 0;
     padding: 0;
     width: 18%;
     background-color: #bbb;
     position: fixed;
     height: 100%;
     overflow: auto;
+    border-radius: 10px;
 }
 ul.navbar li a {
     display: block;
@@ -76,3 +79,13 @@ ul li.dropdown:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
+div.container {
+  margin-left:18%; 
+  padding: 1px 16px; 
+  height:1000px; 
+  margin: 0px;
+  margin-left: 20%;
+  margin-top: 15px;
+  background-color: #bbb;
+  border-top-left-radius: 8px;
