@@ -26,3 +26,27 @@ div.pfp_container div.subcontainer figcaption {
     font-size: 1vw;
     align-self: baseline;
 }
+
+a {
+    all: unset;
+}
+
+div.download_container {
+    width: 50%;
+    height: 10%;
+    background-color: #aaa;
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 4px;
+}
+
+div.download_container div.subcontainer {
+    padding: 5%;
+    text-align: center;
+    vertical-align: center;
+    padding-bottom: 10%;
+}
+div.download_container div.subcontainer figcaption {
+    font-size: 2vw;
+    align-self: baseline;
+}
