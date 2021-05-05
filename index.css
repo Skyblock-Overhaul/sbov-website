@@ -1,0 +1,163 @@
+:root {
+    --color-1: #D1354C;
+    --color-2: #2c62b9;
+
+    --main-color: #eee;
+    --second-color: #bbb;
+    --text-color: #111;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--main-color);
+    color: var(--text-color);
+
+    scroll-behavior: smooth;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--text-color);
+    text-align: left;
+}
+
+a {
+    all: unset;
+    color: var(--color-1);
+}
+
+.textcontainer {
+    color: var(--text-color);
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+div.textcontainer h1 {
+    background: -webkit-linear-gradient(155deg, var(--color-1), var(--color-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* NAVBAR */
+ul.nav {
+  list-style-type: none;
+  
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+  background-color: var(--main-color);
+
+  position: -webkit-sticky;
+  position: sticky;
+
+  z-index: 1;
+  top: 0;
+}
+
+ul.nav li {
+  float: left;
+}
+
+ul.nav li a {
+  display: block;
+  color: var(--text-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav li a:hover {
+  background-color: var(--second-color);
+}
+
+/* GRADIENT */
+
+#gradient {
+    background: var(--color-1);
+    background: -webkit-linear-gradient(155deg, var(--color-1), var(--color-2));
+    background: linear-gradient(155deg, var(--color-1), var(--color-2));
+    height: 100vh;
+}
+
+/* HEADER IMAGE */
+
+div.img-a img {
+  width: 100%;
+  /*
+  filter: blur(20px);
+  -webkit-filter: blur(8px);
+  */
+  z-index: 3;
+}
+
+div.img-a {
+    position: relative;
+
+    color: var(--main-color);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+.centered {
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.blur {
+    filter: blur(20px);
+    -webkit-filter: blur(8px);
+}
+
+/* NEWS COLLAPSIBLE */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+
+    background-color: var(--second-color);
+    min-width: 50vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 0;
+    color: var(--text-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    align-self: left;
+}
+
+.newcontainer {
+    text-align: left;
+}
