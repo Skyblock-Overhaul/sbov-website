@@ -1,39 +1,105 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Skyblock Overhaul - Home</title>
-        <link rel="stylesheet" href="./assets/style/main.css">
-        <link rel="stylesheet" href="./assets/style/navbar.css">
-        <link href="./assets/aos/dist/aos.css" rel="stylesheet">
-        <script src="./assets/aos/dist/aos.js"></script>
+        <title>Test</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <link rel="shortcut icon" href="https://images-ext-2.discordapp.net/external/angcwbhlcrkIGky7gPGaQIP0yTzS_y0qZi_gc9P9sps/%3Fsize%3D2048/https/cdn.discordapp.com/icons/796144458013081650/9093ff183e3e9004cd89fe2b0a9a5f93.png?width=905&height=905" type="image/x-icon">  
 
         <meta content="Skyblock Overhaul - Home" property="og:title">
         <meta content="The official Skyblock Overhaul website. Download SBOV, view staff members, discord invite, and more!" property="og:description">
         <meta content="index.html" property="og:url">
-        <meta property="og:image" content="https://cdn.discordapp.com/icons/796144458013081650/9093ff183e3e9004cd89fe2b0a9a5f93.png?size=2048"/>
+        <meta property="og:image" content="https://images-ext-2.discordapp.net/external/angcwbhlcrkIGky7gPGaQIP0yTzS_y0qZi_gc9P9sps/%3Fsize%3D2048/https/cdn.discordapp.com/icons/796144458013081650/9093ff183e3e9004cd89fe2b0a9a5f93.png?width=905&height=905"/>
         <meta content="#D1354C" data-react-helmet="true" name="theme-color">
     </head>
     <body>
-        <script>AOS.init({easing: 'ease-in-out-back', duration: 700});</script>
-        <ul class="navbar">
-            <li class="navbar"><a class="active"><br>Skyblock Overhaul</a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="download.html">Download</a></li>
-            <li class="navbar dropdown">
-                <span>Credits</span>
-                <div class="dropdown-content">
-                    <a href="staff.html">Staff</a>
-                    <a href="#">Donators</a>
-                    <a href="#">Partners</a>
-                </div>
-            </li>
-        </ul>
-        
-        <div class="container"><br>
+        <script>
+            AOS.init();
+            $('li').click(function(e){
+                e.stopPropagation();
+                if(this.getElementsByTagName("ul")[0].style.display =="block")
+                    $(this).find("ul").slideUp();
+                else
+                    $(this).children(":first").slideDown();
+            });
+        </script>
 
-            <h2 data-aos="fade-down">Skyblock Overhaul</h2>
-            <p data-aos="fade-down" data-aos-delay="50" style="font-size: 18px;">32x by Sporkspoon. 16x by Saikage.</p>
+        <div class="img-a">
+            <div id="gradient">
+            <div class="centered">
+                <h1 data-aos="fade-up" style="color: var(--main-color);">Skyblock Overhaul</h1>
+                <p data-aos="fade-up" data-aos-delay="500" style="color: var(--main-color);">by Sporkspoon</p>
+            </div>
+        </div>
+
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#download">Download</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+
+        <br><br><br>
+        
+        <div id="home" class="textcontainer">
+            <h1>Welcome to the official Skyblock Overhaul website.</h1>
+            <p data-aos="fade-up">This texture pack was entierly drawn by one person, sporkspoon.</p>
+            <p data-aos="fade-up">
+                Hypixel Skyblock has a variety of swords, bows and tools. This revamped pack will include completely overhauled textures of the items in Skyblock, and bring life to the textures with intricate designs and colour!
+            </p><br><br>
+        </div><br><br>
+
+        <div id="news" class="textcontainer">
+            <h1>News</h1>
+
+            <div data-aos="fade-up" class="newcontainer">
+                <i>5/1/2020 - sporkspoon</i><br>
+                <b>SKYBLOCK OVERHAUL RELEASE V.1 IS NOW LIVE!</b><br>
+                GO CHECK IT OUT :D, ITS BEEN 3 MONTHS IN THE MAKING, BUT ITS NOW HERE!<br>
+                <a href="https://hypixel.net/threads/new-skyblock-overhaul-32x-release-v-1.4185988/">Forum Post</a> - 
+                <a href="https://canary.discord.com/channels/796144458013081650/798742202087112754/838203943283982386">Message</a>
+            </div><br>
+
+            <div id="othernews">
+
+                <div data-aos="fade-up" class="newcontainer dropdown">
+                    <i>4/30/2020 - sporkspoon</i><br>
+                    <div class="dropdown-content">
+                        @Announcements Sorry everyone, pack release will most likely be delayed until tomorrow, we still have lots of bugs to work out, GUI still needs to be implemented, and some textures still need to be made.<br>As of making this announcement, the pack is not yet delayed. Keep an eye on this message to see if pack release is pushed to tomorrow.<br>Giveaways will still be happening. Again sorry for the inconvenience. Please don't hate me :sadcat:<br><b>CURRENT STATUS: DELAYED<br>ESTIMATED RELEASE TIME 5PM - 7PM EST (Eastern Standard Time)**</b>
+                        <br><br><a href="https://canary.discord.com/channels/796144458013081650/798742202087112754/837794107309031445">Message</a>
+                    </div>
+                </div>
+                </div>
+                
+                <br><br>
+
+                <div data-aos="fade-up" class="newcontainer dropdown">
+                    <i>4/27/2020 - sporkspoon</i><br>
+                    <div class="dropdown-content">
+                        just to let everyone know, if you <b>do happen to</b> win the giveaway prizes, you must have least <b>Arcane level 5</b> to enter the giveaway and receive your prize. you will not receive your prize if you do not have it, and we will look at the next available person. Do not worry however, this can be quickly obtained just by simply messaging, or using any of our Idle Miner bots (so you have some fun while leveling up Arcane) feel free to use any of these channels: #idle-miner #idle-miner-2 #idle-miner-3 to level up Arcane.<br>For those who entered the <b>300 mil coin giveaway</b>, please re-enter all giveaways if you wish to win. I accidentally set it to ending in 1 day. I have reset the timer to 3 days and 2 hours. Please re-enter if you want to win some prizes.
+                        <br><br><a href="https://canary.discord.com/channels/796144458013081650/798742202087112754/836790104696946729">Message</a>
+                    </div>
+                </div>
+                
+                <br><br>
+            </div>
             
+        </div><br><br>
+
+        <div id="download" class="textcontainer">
+            <h1>Download</h1>
+            <div data-aos="fade-up">
+                <p>Download the pack here.</p>
+                <a href="https://github.com/Skyblock-Overhaul/Skyblock-Overhaul-Website-v2/releases/download/v1.0/Skyblock.Overhaul.32x.-.v1.zip">
+                    Download 32x - v1
+                </a>
+            </div>
+        </div><br><br><br><br><br><br><br><br>
+
+        <div id="bottom" class="footer">
+            <h3>Website was built by stef#6470. Credits go to Skyblock Overhaul.</h3>
         </div>
     </body>
 </html>
