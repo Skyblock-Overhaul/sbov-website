@@ -1,3 +1,6 @@
+
+/* SETTING VARIABLES*/
+
 :root {
     --color-1: #D1354C;
     --color-2: #2c62b9;
@@ -18,32 +21,13 @@ html, body {
 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: left;
+    text-align: center;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    color: var(--text-color);
-    text-align: left;
-}
+h1, h2, h3, h4, h5, h6, p {color: var(--text-color);}
 
-h1 {
-    font-size: 4vw;
-}
-h2 {
-    font-size: 3.5vw;
-}
-h3 {
-    font-size: 3vw;
-    margin-right: 2vw;
-    margin-left: 2vw;
-}
-h4 {
-    font-size: 2.5vw;
-}
-
-p, a, i, b {
-    font-size: 1.5vw;
-}
-
+h1 {font-size: 3em;}
+p, i, b, span {font-size: 1em;}
 a {
     all: unset;
     color: var(--color-1);
@@ -77,9 +61,7 @@ ul.nav {
   top: 0;
 }
 
-ul.nav li {
-  float: left;
-}
+ul.nav li {float: left;}
 
 ul.nav li a {
   display: block;
@@ -93,8 +75,13 @@ ul.nav li a:hover {
   background-color: var(--second-color);
 }
 
-/* GRADIENT */
+@media screen and (max-width: 600px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
 
+
+/* GRADIENT */
 #gradient {
     background: var(--color-1);
     background: -webkit-linear-gradient(155deg, var(--color-1), var(--color-2));
@@ -175,8 +162,4 @@ div.img-a {
 .dropdown:hover .dropdown-content {
     display: block;
     align-self: left;
-}
-
-.newcontainer {
-    text-align: left;
 }
