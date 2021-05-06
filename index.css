@@ -163,3 +163,28 @@ div.img-a {
     display: block;
     align-self: left;
 }
+
+.stage {
+    display: flex;
+}
+.box {
+    align-self: flex-end;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    margin: 0 auto 0 auto;
+    transform-origin: bottom;
+}
+.bounce-3 {
+    animation-name: bounce-3;
+    animation-timing-function: ease;
+}
+
+@keyframes bounce-3 {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1,1)    translateY(0); }
+    30%  { transform: scale(1,1)    translateY(-25px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    57%  { transform: scale(1,1)    translateY(-10px); }
+    68%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
