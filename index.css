@@ -136,6 +136,13 @@ div.img-a {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.bottom-centered {
+    position: absolute;
+    top: 95vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .blur {
     filter: blur(20px);
     -webkit-filter: blur(8px);
