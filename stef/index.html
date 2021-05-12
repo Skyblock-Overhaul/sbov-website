@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stef</title>
+        
+        <link rel="stylesheet" href="./index.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <link rel="shortcut icon" href="https://images-ext-2.discordapp.net/external/angcwbhlcrkIGky7gPGaQIP0yTzS_y0qZi_gc9P9sps/%3Fsize%3D2048/https/cdn.discordapp.com/icons/796144458013081650/9093ff183e3e9004cd89fe2b0a9a5f93.png?width=905&height=905" type="image/x-icon">  
+
+        <meta content="Skyblock Overhaul - Home" property="og:title">
+        <meta content="The official Skyblock Overhaul website. Download SBOV, view staff members, discord invite, and more!" property="og:description">
+        <meta content="index.html" property="og:url">
+        <meta property="og:image" content="https://images-ext-2.discordapp.net/external/angcwbhlcrkIGky7gPGaQIP0yTzS_y0qZi_gc9P9sps/%3Fsize%3D2048/https/cdn.discordapp.com/icons/796144458013081650/9093ff183e3e9004cd89fe2b0a9a5f93.png?width=905&height=905"/>
+        <meta content="#D1354C" data-react-helmet="true" name="theme-color">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script>
+            AOS.init();
+            $('li').click(function(e){
+                e.stopPropagation();
+                if(this.getElementsByTagName("ul")[0].style.display =="block")
+                    $(this).find("ul").slideUp();
+                else
+                    $(this).children(":first").slideDown();
+            });
+        </script>
+        <div class="img-a">
+            <div id="gradient">
+            <div class="centered">
+                <h1 data-aos="fade-up" style="color: var(--main-color);">Stef</h1>
+                <p data-aos="fade-up" data-aos-delay="500" style="color: var(--main-color);">very cool...</p>
+            </div>
+            <div class="bottom-centered stage">
+                <div class="box bounce-3">
+                    <a href="#navbar" style="color: var(--main-color);">▼</a>
+                </div>
+            </div>
+        </div>
+
+        <ul class="nav" id="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bots">Bots</a></li>
+            <li><a href="#discords">Discords</a></li>
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+
+        <br><br><br>
+        
+        <div id="home" class="textcontainer">
+            <h1>Hello. I'm Stef.</h1>
+            <p data-aos="fade-up">I created the Skyblock Overhaul website (<a href='https://sbov.art/'>sbov.art</a>) and the discord.</p>
+            <p data-aos="fade-up">
+                I like to make discord bots with python.
+            </p><br><br>
+        </div><br><br>
+
+        <div id="bots" class="textcontainer">
+            <h1>Bots</h1>
+
+            <div data-aos="fade-up" class="newcontainer">
+                <i>Stef / Stef Dev</i><br>
+                <b>Main Bots</b><br>
+                Used for testing, all purpose. Include moderation, starboards, and more!<br>
+            </div><br>
+
+            <div id="othernews">
+
+                <div data-aos="fade-up" class="newcontainer dropdown">
+                    <i>Bridge</i><br>
+                    <div class="dropdown-content">
+                        Links Hypixel Guilds with discord roles.<br>WIP, made for the Clan of Midgard guild.
+                    </div>
+                </div>
+                </div>
+                
+                <br><br>
+
+                <div data-aos="fade-up" class="newcontainer dropdown">
+                    <i>Skyblock Overhaul</i><br>
+                    <div class="dropdown-content">
+                        Has a GitHub download counter channel + moderation from Stef Dev.<br>Created for Skyblock Overhaul.
+                    </div>
+                </div>
+                
+                <br><br>
+            </div>
+            
+        </div><br><br>
+
+        <div id="discords" class="textcontainer">
+            <h1>Discords</h1>
+            <div data-aos="fade-up">
+                <p>Join my discord servers here.</p>
+                <a href="">
+                    Skyblock Overhaul
+                </a><br>
+                <a href="">
+                    Bot Server
+                </a>
+            </div>
+        </div><br><br><br><br><br><br><br><br>
+
+        <div id="bottom" class="footer">
+            <h3>Website was built by stef#6470.</h3>
+        </div>
+    </body>
+</html>
